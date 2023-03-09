@@ -25,7 +25,9 @@ a{
 	margin-left: 37%;
 	margin-right: 35%;
 }
-
+.burgernav{
+	display: none;
+}
 .connexion {
 	width: 9%;
 	height: 20%;
@@ -391,6 +393,56 @@ a{
 	.box{
 		width: 60%;
 		min-width: 200px;
+	}
+	.hautdepage{
+		justify-content: space-between;
+		align-items: center;
+	}
+	.page1 .bouton{
+		display: none;
+	}
+	button.connexion{
+		display: none;
+	}
+	.menu{
+		display: none;
+	}
+	.burgernav{
+		display: block;
+	}
+	.burgernav .burger .burgerclose{
+		display: none;
+	}
+	.burgeropen.active{
+		display: none;
+	}
+	.burgernav .burger .burgerclose.active{
+		display: block;
+	}
+	.burgermenu{
+		display:none;
+		position: absolute;
+    	z-index: 1000;
+    	left: 0%;
+    	font-size: 12px;
+    	width: 100%;
+
+	}
+	.burgermenu.active{
+		display:block;
+		position: absolute;
+    	z-index: 1000;
+    	left: 0%;
+    	font-size: 12px;
+    	width: 100%;
+
+	}
+	.burgermenu div{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		background-color: rgba(0, 0, 0, 0.7);
+		padding-top: 5px;
 	}
 
 }
